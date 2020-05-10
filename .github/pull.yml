@@ -1,0 +1,23 @@
+version: "1"
+rules:
+  - base: stable
+    upstream: ember-cli:stable
+    mergeMethod: rebase
+    # Optional Options
+    assignees:
+      - NullVoxPopuli
+    reviewers:
+      - NullVoxPopuli
+    conflictReviewers:
+      - NullVoxPopuli
+
+  # Keep the TypeScript branch in sync with stable
+  - base: stable-ts
+    upstream: NullVoxPopuli:stable
+    mergeMethod: rebase
+    assignees:
+      - NullVoxPopuli
+    reviewers:
+      - NullVoxPopuli
+    conflictReviewers:
+      - NullVoxPopuli
