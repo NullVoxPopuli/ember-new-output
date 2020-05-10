@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "config:base"
+  ],
+
+  // only update the stable-ts branch.
+  // stable will reflect an exact copy of upstream ember-cli
+  "baseBranches": ["stable-ts"],
+  "autoMerge": false,
+
+  "packageRules": [
+    ////////////////////////////////////////
+    // Grouping namespaced packages together
+    ////////////////////////////////////////
+    {
+      "packagePatterns": [
+        "^ember-cli-type*",
+        "^@types\/*",
+        "typescript"
+      ],
+      "groupName": "TypeScript Dependencies for the 'stable-ts' branch"
+    }
+  ]
+}
