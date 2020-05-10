@@ -1,0 +1,26 @@
+version: "1"
+rules:
+  - base: stable
+    upstream: ember-cli:stable
+    # note: rebase will append upstream changes *after* our own changes
+    # after a PR is merged
+    # mergeMethod: rebase
+    mergeMethod: hardreset
+    # Optional Options
+    assignees:
+      - NullVoxPopuli
+    reviewers:
+      - NullVoxPopuli
+    conflictReviewers:
+      - NullVoxPopuli
+
+  # Keep the TypeScript branch in sync with stable
+  - base: stable-ts
+    upstream: NullVoxPopuli:stable
+    mergeMethod: rebase
+    assignees:
+      - NullVoxPopuli
+    reviewers:
+      - NullVoxPopuli
+    conflictReviewers:
+      - NullVoxPopuli
