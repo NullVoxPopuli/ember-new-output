@@ -1,0 +1,11 @@
+version: "1"
+rules:
+  - base: stable
+    upstream: ember-cli:stable
+    mergeMethod: rebase
+    assignees:              # Optional
+      - NullVoxPopuli
+    reviewers:              # Optional
+      - NullVoxPopuli
+    conflictReviewers:      # Optional, on merge conflict assign a reviewer
+      - NullVoxPopuli
