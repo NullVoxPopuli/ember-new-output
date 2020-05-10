@@ -15,7 +15,7 @@
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
-    "start": "ember serve",
+    "start": "cross-env JOBS=1 ember serve -p 4200",
     "test": "npm-run-all lint:* test:*",
     "test:ember": "ember test"
   },
@@ -25,6 +25,7 @@
     "@glimmer/tracking": "^1.0.0",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
+    "cross-env": "^7.0.2",
     "ember-auto-import": "^1.5.3",
     "ember-cli": "~3.18.0",
     "ember-cli-app-version": "^3.2.0",
