@@ -3,9 +3,21 @@ rules:
   - base: stable
     upstream: ember-cli:stable
     mergeMethod: rebase
-    assignees:              # Optional
+    # Optional Options
+    assignees:
       - NullVoxPopuli
-    reviewers:              # Optional
+    reviewers:
       - NullVoxPopuli
-    conflictReviewers:      # Optional, on merge conflict assign a reviewer
+    conflictReviewers:
+      - NullVoxPopuli
+
+  # Keep the TypeScript branch in sync with stable
+  - base: stable-ts
+    upstream: NullVoxPopuli:stable
+    mergeMethod: rebase
+    assignees:
+      - NullVoxPopuli
+    reviewers:
+      - NullVoxPopuli
+    conflictReviewers:
       - NullVoxPopuli
