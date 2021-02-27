@@ -13,7 +13,7 @@
   "scripts": {
     "build": "ember build --environment=production",
     "start": "JOBS=1 ember serve",
-    "test": "npm-run-all lint test:*",
+    "test": "npm-run-all test:*",
     "test:ember": "ember test"
   },
   "devDependencies": {
@@ -21,7 +21,6 @@
     "@ember/test-helpers": "^2.2.0",
     "@glimmer/component": "^1.0.3",
     "@glimmer/tracking": "^1.0.3",
-    "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.10.1",
     "ember-cli": "~3.25.0",
