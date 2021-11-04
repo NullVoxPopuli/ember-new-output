@@ -1,5 +1,5 @@
 {
-  "template": "node",
+  "template": "ember",
   "infiniteLoopProtection": true,
   "hardReloadOnChange": true,
   "container": {
